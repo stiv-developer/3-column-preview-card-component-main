@@ -1,0 +1,143 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Lexend Deca", serif;
+    color: var(--Transparent-white-paragraphs);
+}
+
+.container{
+    padding: 50px 20px;
+}
+
+.group-card{
+
+}
+
+.card{
+    padding: 30px;
+}
+
+.card .card-header{
+
+}
+
+.card .card-header img{
+
+}
+
+.card .card-body{
+
+}
+
+.card .card-body h2{
+    font-family: "Big Shoulders Display", sans-serif;   
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 2.5rem;
+}
+
+.card .card-body p{
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+.card .card-body button{
+    margin-top: 15px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 0;
+    color: var(--Bright-orange);
+    font-weight: 700;
+    width: 160px;
+    font-family: "Lexend Deca", serif;
+}
+
+.card .card-body .button-sedans{
+    color: var(--Bright-orange);
+}
+
+.card .card-body .button-sedans:hover{
+    background-color: var(--Bright-orange);
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.card .card-body .button-syvs{
+    color: var(--Dark-cyan);
+}
+
+.card .card-body .button-syvs:hover{
+    background-color: var(--Dark-cyan);
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.card .card-body .button-luxury{
+    color: var(--Very-dark-cyan);
+}
+
+.card .card-body .button-luxury:hover{
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.card.sedans{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card.syvs{
+    background-color: var(--Dark-cyan);
+}
+
+.card.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .container{
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .group-card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card.sedans{
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .card.syvs{
+        background-color: var(--Dark-cyan);
+    }
+    
+    .card.luxury{
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+}
+
